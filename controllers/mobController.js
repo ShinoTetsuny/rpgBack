@@ -14,7 +14,7 @@ exports.getOneMob = (req, res, next) => {
 
 exports.createMob = (req, res, next) => {
     mob.create({
-        nameMob: req.body.name,
+        nameMob: req.body.nameMob,
         strMob : req.body.strMob,
         dexMob : req.body.dexMob,
         sagMob : req.body.sagMob,
@@ -27,7 +27,7 @@ exports.createMob = (req, res, next) => {
 
 exports.editMob = (req, res, next) => {
     mob.update({
-        nameMob: req.body.name,
+        nameMob: req.body.nameMob,
         strMob : req.body.strMob,
         dexMob : req.body.dexMob,
         sagMob : req.body.sagMob,

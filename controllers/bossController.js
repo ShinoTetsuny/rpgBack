@@ -14,7 +14,7 @@ exports.getOneBoss = (req, res, next) => {
 
 exports.createBoss = (req, res, next) => {
     boss.create({
-        nameBoss: req.body.name,
+        nameBoss: req.body.nameBoss,
         strBoss : req.body.strMob,
         dexBoss : req.body.dexMob,
         sagBoss : req.body.sagMob,
@@ -29,7 +29,7 @@ exports.createBoss = (req, res, next) => {
 
 exports.editBoss = (req, res, next) => {
     boss.update({
-        nameBoss: req.body.name,
+        nameBoss: req.body.nameBoss,
         strBoss : req.body.strMob,
         dexBoss : req.body.dexMob,
         sagBoss : req.body.sagMob,

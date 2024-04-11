@@ -31,7 +31,7 @@ const Boss = sequelize.define('boss', {
         type: DataTypes.STRING(50)
     },
     dmgCDBoss: {
-        type: DataTypes.STRING(50)
+        type: DataTypes.INTEGER
     }
 }, {
     freezeTableName: true,
