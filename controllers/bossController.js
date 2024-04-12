@@ -15,11 +15,11 @@ exports.getOneBoss = (req, res, next) => {
 exports.createBoss = (req, res, next) => {
     boss.create({
         nameBoss: req.body.nameBoss,
-        strBoss : req.body.strMob,
-        dexBoss : req.body.dexMob,
-        sagBoss : req.body.sagMob,
-        conBoss : req.body.conMob,
-        intBoss : req.body.intMob,
+        strBoss : req.body.strBoss,
+        dexBoss : req.body.dexBoss,
+        sagBoss : req.body.sagBoss,
+        conBoss : req.body.conBoss,
+        intBoss : req.body.intBoss,
         dmgRangeBoss : req.body.dmgRangeBoss,
         dmgCDBoss : req.body.dmgCDBoss,
     })
@@ -30,11 +30,11 @@ exports.createBoss = (req, res, next) => {
 exports.editBoss = (req, res, next) => {
     boss.update({
         nameBoss: req.body.nameBoss,
-        strBoss : req.body.strMob,
-        dexBoss : req.body.dexMob,
-        sagBoss : req.body.sagMob,
-        conBoss : req.body.conMob,
-        intBoss : req.body.intMob,
+        strBoss : req.body.strBoss,
+        dexBoss : req.body.dexBoss,
+        sagBoss : req.body.sagBoss,
+        conBoss : req.body.conBoss,
+        intBoss : req.body.intBoss,
         dmgRangeBoss : req.body.dmgRangeBoss,
         dmgCDBoss : req.body.dmgCDBoss,
     }, { where: { idBoss: req.params.id } })
