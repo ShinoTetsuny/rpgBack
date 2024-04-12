@@ -17,6 +17,10 @@ const Weapon = sequelize.define('weapon', {
     },
     dmgCDWeapon: {
         type: DataTypes.INTEGER
+    },
+    type: {
+        type: DataTypes.STRING(50),
+        allowNull: false
     }
 }, {
     freezeTableName: true,

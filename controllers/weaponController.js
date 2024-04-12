@@ -16,7 +16,8 @@ exports.createWeapon = (req, res, next) => {
     weapon.create({
         nameWeapon: req.body.nameWeapon,
         dmgRangeWeapon : req.body.dmgRangeWeapon,
-        dmgCDWeapon : req.body.dmgCDWeapon
+        dmgCDWeapon : req.body.dmgCDWeapon,
+        type: req.body.type
     })
         .then((weapon) => res.status(200).json(weapon))
         .catch((error) => res.status(400).json({ error }))
@@ -26,7 +27,8 @@ exports.editWeapon = (req, res, next) => {
     weapon.update({
         nameWeapon: req.body.nameWeapon,
         dmgRangeWeapon : req.body.dmgRangeWeapon,
-        dmgCDWeapon : req.body.dmgCDWeapon
+        dmgCDWeapon : req.body.dmgCDWeapon,
+        type: req.body.type
     }, { where: { idWeapon: req.params.id } })
         .then((weapon) => res.status(200).json(weapon))
         .catch((error) => res.status(400).json({ error }))
